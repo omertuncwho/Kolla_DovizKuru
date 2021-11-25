@@ -11,6 +11,7 @@ namespace TRYExchRate
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             TRYExchRate helper = new TRYExchRate(DateTime.Now.Date);
@@ -35,23 +36,36 @@ namespace TRYExchRate
 
             Console.ReadLine();
         }
+
+
+        //SQL CONNECTİON
         // data reader ve  data setleri buraya yerleştirdim.
 
         static SqlConnection baglanti;
         static SqlCommand komut;
         static SqlDataReader reader;
 
-        //SQL CONNECTİON
         // SQL satırlarınu bu şekilde ekledim fakat , euro veya dolar değişkenlerinden gelen verileri ve tarihi veri tabanına ekleyemedim .. Aşağıdaki sadece bir örnek 
-        baglanti = new SqlConnection();
-        baglanti.ConnectionString = "Data Source=.;Initial Catalog=kutuphane;Integrated Security=SSPI";
+        public static void Guncelle()
+        {
+            Console.WriteLine("Numara Nedir");
+            int no = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ad Nedir:");
+            string ad = Console.ReadLine();
+            Console.WriteLine("Soyadı Nedir:");
+            string soyad = Console.ReadLine();
+            Console.WriteLine("Sınıf Nedir:");
+            string sinif = Console.ReadLine();
+
+            baglanti = new SqlConnection();
+            baglanti.ConnectionString = "Data Source=.;Initial Catalog=kutuphane;Integrated Security=SSPI";
             komut = new SqlCommand();
-        komut.Connection = baglanti;
-            komut.CommandText = "UPDATE ogrenci SET ograd='"+ad+"',ogrsoyad='"+soyad+"',sinif='"+sinif+"' WHERE ogrno="+no.ToString();
- 
+            komut.Connection = baglanti;
+            komut.CommandText = "UPDATE ogrenci SET ograd='" + ad + "',ogrsoyad='" + soyad + "',sinif='" + sinif + "' WHERE ogrno=" + no.ToString();
+
             baglanti.Open();
             int sonuc = komut.ExecuteNonQuery();
-        baglanti.Close();
+            baglanti.Close();
             if (sonuc > 0)
             {
                 Console.WriteLine("Güncellendi");
@@ -60,10 +74,10 @@ namespace TRYExchRate
             {
                 Console.WriteLine("Başarısız");
             }
- 
+
         }
 
 
-
     }
-    }
+ }
+    
