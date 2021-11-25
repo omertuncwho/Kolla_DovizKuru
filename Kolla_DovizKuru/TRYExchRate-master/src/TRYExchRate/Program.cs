@@ -44,22 +44,29 @@ namespace TRYExchRate
             var username = "koella.cockpit"; //Kullanıcı Adımız
             var password = "kDj4FtPe"; //Parolamız
 
+
+
+
             //Bağlantı Kelimeleri 
-            string connString = @"Data Source=" + datasource + ";Initial Catalog="+ database + ";Persist Security Info=True;User ID=" + username + ";Password=" + password;
+            string connString = @"Data Source=" + datasource + ";Initial Catalog=" + database + ";Persist Security Info=True;User ID=" + username + ";Password=" + password;
 
             //create instanace of database connection
             SqlConnection conn = new SqlConnection(connString);
             SqlCommand komm = new SqlCommand();
             komm.Connection = conn;
-            //komm.CommandText = "UPDATE DOVIZKURLARI SET  DolarIsim='ABD DOLARI', DolarCurrencyName='US DOLLAR', DolarForexBuying='" + ("USD", ExchRateType.ForexBuying) + "',DolarForexSelling='" + ("USD", ExchRateType.ForexSelling) + "',EuroIsim='EURO',EuroCurrencyName='EURO',EuroForexBuying='" + ("EUR", ExchRateType.ForexBuying) + "',EuroForexSelling='" + ("EUR", ExchRateType.ForexSelling) + "',  WHERE ogrno=" + no.ToString();
-            DateTime localDate = DateTime.Now;
             
+
+            //komm.CommandText = "UPDATE DOVIZKURLARI SET  DolarIsim='ABD DOLARI', DolarCurrencyName='US DOLLAR', DolarForexBuying='" + ("USD", ExchRateType.ForexBuying) + "',DolarForexSelling='" + ("USD", ExchRateType.ForexSelling) + "',EuroIsim='EURO',EuroCurrencyName='EURO',EuroForexBuying='" + ("EUR", ExchRateType.ForexBuying) + "',EuroForexSelling='" + ("EUR", ExchRateType.ForexSelling) + "',  WHERE ogrno=" + no.ToString();
+
+
             try
             {
                 Console.WriteLine("Openning Connection ...");
 
                 //open connection
-                
+                komm.CommandText = "SELECT*FROM DOVIZKURLARI WHERE DolarIsim='ABD DOLARI'";
+
+
                 Console.WriteLine("Connection successful!");
             }
             catch (Exception e)
@@ -69,11 +76,8 @@ namespace TRYExchRate
 
             Console.Read();
         }
-
+      
     }
 
-
 }
-
- 
     
