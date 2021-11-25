@@ -35,6 +35,11 @@ namespace TRYExchRate
 
             Console.ReadLine();
         }
+        // data reader ve  data setleri buraya yerleştirdim.
+
+        static SqlConnection baglanti;
+        static SqlCommand komut;
+        static SqlDataReader reader;
 
         //SQL CONNECTİON
         // SQL satırlarınu bu şekilde ekledim fakat , euro veya dolar değişkenlerinden gelen verileri ve tarihi veri tabanına ekleyemedim .. Aşağıdaki sadece bir örnek 
