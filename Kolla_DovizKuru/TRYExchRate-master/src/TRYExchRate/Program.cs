@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-//SQl Connection
+//SQl Bağlantısı
 using System.Data;
 using System.Data.SqlClient;
-//XML Connection
+//XML  Bağlantısı
 using System.Xml;
 namespace TRYExchRate
 {
     class Program
     {
-
+        static SqlConnection comand;
         static void Main(string[] args)
         {
+
             TRYExchRate helper = new TRYExchRate(DateTime.Now.Date);
             helper.LoadExchRate();
 
@@ -24,60 +25,55 @@ namespace TRYExchRate
             Console.WriteLine("Api linki: " + helper.ApiUrl);
             Console.WriteLine("");
 
-            // USD
+            // USD Kurları Gösterilir
             Console.WriteLine("USD - DOLAR Alış: " + helper.GetExchRate("USD", ExchRateType.ForexBuying).ToString());
             Console.WriteLine("USD - DOLAR Satış: " + helper.GetExchRate("USD", ExchRateType.ForexSelling).ToString());
             Console.WriteLine("");
 
-            //EUR
+            //EURO Kurları Gösterilir
             Console.WriteLine("EUR - EURO Alış: " + helper.GetExchRate("EUR", ExchRateType.ForexBuying).ToString());
             Console.WriteLine("EUR - EURO Satış: " + helper.GetExchRate("EUR", ExchRateType.ForexSelling).ToString());
             Console.WriteLine("");
 
-            Console.ReadLine();
-        }
+            //SQL START Connection
 
+            Console.WriteLine("Getting Connection ...");
 
-        //SQL CONNECTİON
-        // data reader ve  data setleri buraya yerleştirdim.
+            var datasource = "vpn.koella.com.tr";//Server Adresimiz
+            var database = "Cockpit"; //Veri Tabanı İsmimiz
+            var username = "koella.cockpit"; //Kullanıcı Adımız
+            var password = "kDj4FtPe"; //Parolamız
 
-        static SqlConnection baglanti;
-        static SqlCommand komut;
-        static SqlDataReader reader;
+            //Bağlantı Kelimeleri 
+            string connString = @"Data Source=" + datasource + ";Initial Catalog="+ database + ";Persist Security Info=True;User ID=" + username + ";Password=" + password;
 
-        // SQL satırlarınu bu şekilde ekledim fakat , euro veya dolar değişkenlerinden gelen verileri ve tarihi veri tabanına ekleyemedim .. Aşağıdaki sadece bir örnek 
-        public static void Guncelle()
-        {
-            Console.WriteLine("Numara Nedir");
-            int no = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ad Nedir:");
-            string ad = Console.ReadLine();
-            Console.WriteLine("Soyadı Nedir:");
-            string soyad = Console.ReadLine();
-            Console.WriteLine("Sınıf Nedir:");
-            string sinif = Console.ReadLine();
-
-            baglanti = new SqlConnection();
-            baglanti.ConnectionString = "Data Source=.;Initial Catalog=kutuphane;Integrated Security=SSPI";
-            komut = new SqlCommand();
-            komut.Connection = baglanti;
-            komut.CommandText = "UPDATE ogrenci SET ograd='" + ad + "',ogrsoyad='" + soyad + "',sinif='" + sinif + "' WHERE ogrno=" + no.ToString();
-
-            baglanti.Open();
-            int sonuc = komut.ExecuteNonQuery();
-            baglanti.Close();
-            if (sonuc > 0)
+            //create instanace of database connection
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand komm = new SqlCommand();
+            komm.Connection = conn;
+            //komm.CommandText = "UPDATE DOVIZKURLARI SET  DolarIsim='ABD DOLARI', DolarCurrencyName='US DOLLAR', DolarForexBuying='" + ("USD", ExchRateType.ForexBuying) + "',DolarForexSelling='" + ("USD", ExchRateType.ForexSelling) + "',EuroIsim='EURO',EuroCurrencyName='EURO',EuroForexBuying='" + ("EUR", ExchRateType.ForexBuying) + "',EuroForexSelling='" + ("EUR", ExchRateType.ForexSelling) + "',  WHERE ogrno=" + no.ToString();
+            DateTime localDate = DateTime.Now;
+            
+            try
             {
-                Console.WriteLine("Güncellendi");
+                Console.WriteLine("Openning Connection ...");
+
+                //open connection
+                
+                Console.WriteLine("Connection successful!");
             }
-            else
+            catch (Exception e)
             {
-                Console.WriteLine("Başarısız");
+                Console.WriteLine("Error: " + e.Message);
             }
 
+            Console.Read();
         }
-
 
     }
- }
+
+
+}
+
+ 
     
