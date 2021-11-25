@@ -6,3 +6,11 @@ C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.
 C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.csproj.CoreCompileInputs.cache
 C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.exe
 C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.pdb
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\Kolla_DovizKuru\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.csproj.AssemblyReference.cache
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\Kolla_DovizKuru\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.csproj.SuggestedBindingRedirects.cache
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\Kolla_DovizKuru\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.csproj.CoreCompileInputs.cache
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\Kolla_DovizKuru\TRYExchRate-master\src\TRYExchRate\bin\Debug\KollaDovizKuru.exe.config
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\Kolla_DovizKuru\TRYExchRate-master\src\TRYExchRate\bin\Debug\KollaDovizKuru.exe
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\Kolla_DovizKuru\TRYExchRate-master\src\TRYExchRate\bin\Debug\KollaDovizKuru.pdb
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\Kolla_DovizKuru\TRYExchRate-master\src\TRYExchRate\obj\Debug\KollaDovizKuru.exe
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\Kolla_DovizKuru\TRYExchRate-master\src\TRYExchRate\obj\Debug\KollaDovizKuru.pdb

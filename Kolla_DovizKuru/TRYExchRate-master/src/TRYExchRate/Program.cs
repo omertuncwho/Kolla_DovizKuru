@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+//SQl Connection
 using System.Data;
 using System.Data.SqlClient;
-
-
+//XML Connection
+using System.Xml;
 namespace TRYExchRate
 {
     class Program
@@ -34,6 +35,8 @@ namespace TRYExchRate
 
             Console.ReadLine();
         }
+
+        helper.GetExchRate(ExchRateType.ForexBuying)
 
       
 

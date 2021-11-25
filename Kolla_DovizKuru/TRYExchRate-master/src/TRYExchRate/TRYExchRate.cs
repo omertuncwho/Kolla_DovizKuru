@@ -4,10 +4,8 @@ using System.Xml;
 
 namespace TRYExchRate
 {
-    /// <summary>
     /// T.C. Merkez Bankası (TCMB) tarafından yayınlanan döviz kurlarını alır
-    /// Güven Şahin - guvensahin.com
-    /// </summary>
+
     class TRYExchRate
     {
         /// <summary>
