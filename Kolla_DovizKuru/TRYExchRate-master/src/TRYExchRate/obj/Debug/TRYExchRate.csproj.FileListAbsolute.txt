@@ -1,0 +1,8 @@
+C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\bin\Debug\TRYExchRate.exe.config
+C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\bin\Debug\TRYExchRate.exe
+C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\bin\Debug\TRYExchRate.pdb
+C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.csproj.AssemblyReference.cache
+C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.csproj.SuggestedBindingRedirects.cache
+C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.csproj.CoreCompileInputs.cache
+C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.exe
+C:\Users\KPCTR\Desktop\TRYExchRate-master\src\TRYExchRate\obj\Debug\TRYExchRate.pdb
