@@ -36,10 +36,27 @@ namespace TRYExchRate
             Console.ReadLine();
         }
 
-        helper.GetExchRate(ExchRateType.ForexBuying)
-
-      
-
+        //SQL CONNECTİON
+        // SQL satırlarınu bu şekilde ekledim fakat , euro veya dolar değişkenlerinden gelen verileri ve tarihi veri tabanına ekleyemedim .. Aşağıdaki sadece bir örnek 
+        baglanti = new SqlConnection();
+        baglanti.ConnectionString = "Data Source=.;Initial Catalog=kutuphane;Integrated Security=SSPI";
+            komut = new SqlCommand();
+        komut.Connection = baglanti;
+            komut.CommandText = "UPDATE ogrenci SET ograd='"+ad+"',ogrsoyad='"+soyad+"',sinif='"+sinif+"' WHERE ogrno="+no.ToString();
+ 
+            baglanti.Open();
+            int sonuc = komut.ExecuteNonQuery();
+        baglanti.Close();
+            if (sonuc > 0)
+            {
+                Console.WriteLine("Güncellendi");
+            }
+            else
+            {
+                Console.WriteLine("Başarısız");
+            }
+ 
+        }
 
 
 
