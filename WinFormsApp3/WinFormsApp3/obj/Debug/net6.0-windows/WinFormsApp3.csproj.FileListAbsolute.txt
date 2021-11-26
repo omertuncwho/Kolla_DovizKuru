@@ -1,0 +1,16 @@
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.Form1.resources
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.csproj.GenerateResource.cache
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.AssemblyInfoInputs.cache
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.AssemblyInfo.cs
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\bin\Debug\net6.0-windows\WinFormsApp3.exe
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\bin\Debug\net6.0-windows\WinFormsApp3.deps.json
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\bin\Debug\net6.0-windows\WinFormsApp3.runtimeconfig.json
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\bin\Debug\net6.0-windows\WinFormsApp3.dll
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\bin\Debug\net6.0-windows\ref\WinFormsApp3.dll
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\bin\Debug\net6.0-windows\WinFormsApp3.pdb
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.dll
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\ref\WinFormsApp3.dll
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.pdb
+C:\Users\KPCTR\Documents\GitHub\Kolla_DovizKuru\WinFormsApp3\WinFormsApp3\obj\Debug\net6.0-windows\WinFormsApp3.genruntimeconfig.cache
